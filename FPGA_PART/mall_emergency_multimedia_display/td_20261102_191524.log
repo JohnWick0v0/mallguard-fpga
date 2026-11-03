@@ -1,0 +1,242 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = E:/Study/Anlogic_TD/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     25071
+   Run Date =   Mon Nov  2 19:15:24 2026
+
+   Run on =     ERIK
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "open_project mall_emergency_multimedia_display.al"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file src/audio/audio_sector_arbiter.v
+HDL-1007 : analyze verilog file src/audio/background_tone_generator.v
+HDL-1007 : analyze verilog file src/audio/pcm_stream_adapter.v
+HDL-1007 : analyze verilog file src/audio/wav_file_player.v
+HDL-1007 : analyze verilog file src/clock/sys_pll.v
+HDL-1007 : analyze verilog file src/clock/video_pll.v
+HDL-1007 : analyze verilog file src/common/afifo_32_16_256.v
+HDL-1007 : analyze verilog file src/common/async_pcm_fifo.v
+HDL-1007 : analyze verilog file src/common/demo_fifo.v
+HDL-1007 : analyze verilog file src/common/fifo_prefetch_2.v
+HDL-1007 : analyze verilog file src/common/reset_sync.v
+HDL-1007 : analyze verilog file src/common/status_snapshot_cdc.v
+HDL-1007 : analyze verilog file src/common/sticky_error_cdc.v
+HDL-1007 : analyze verilog file src/common/sync_2ff.v
+HDL-1007 : analyze verilog file src/common/system_reset_controller.v
+HDL-1007 : analyze verilog file src/control/advertisement_playback_controller.v
+HDL-1007 : analyze verilog file src/control/advertising_slot_supervisor.v
+HDL-1007 : analyze verilog file src/control/boot_load_progress.v
+HDL-1007 : analyze verilog file src/control/media_reload_controller.v
+HDL-1007 : analyze verilog file src/control/mode_switch.v
+HDL-1007 : analyze verilog file src/control/video_mode_control.v
+HDL-1007 : analyze verilog file src/display/audio_envelope_visualizer.v
+HDL-1007 : analyze verilog file src/display/boot_loading_display.v
+HDL-1007 : analyze verilog file src/display/brand_watermark_24.v
+HDL-1007 : analyze verilog file src/display/color_adjust_pipeline.v
+HDL-1007 : analyze verilog file src/display/display_segment_panel.v
+HDL-1007 : analyze verilog file src/display/display_status_overlay.v
+HDL-1007 : analyze verilog file src/display/loading_banner.v
+HDL-1007 : analyze verilog file src/display/mall_marquee_font_rom.v
+HDL-1007 : analyze verilog file src/display/mall_marquee_glyphs.v
+HDL-1007 : analyze verilog file src/display/mall_marquee_overlay.v
+HDL-1007 : analyze verilog file src/display/overlay_switch_control.v
+HDL-1007 : analyze verilog file src/display/panel_period_counter.v
+HDL-1007 : analyze verilog file src/display/rgb_video_adapter.v
+HDL-1007 : analyze verilog file src/display/status_glyph_renderer.v
+HDL-1007 : analyze verilog file src/display/thumbnail_gallery_overlay.v
+HDL-1007 : analyze verilog file src/display/video_fade_transition.v
+HDL-1007 : analyze verilog file src/display/video_timing_ctrl.v
+HDL-1007 : analyze verilog file src/emergency/emergency_font_rom.v
+HDL-1007 : analyze verilog file src/emergency/emergency_halo_overlay.v
+HDL-1007 : analyze verilog file src/emergency/emergency_halo_profile_rom.v
+HDL-1007 : analyze verilog file src/emergency/emergency_indicators.v
+HDL-1007 : analyze verilog file src/emergency/emergency_scene_fallback.v
+HDL-1007 : analyze verilog file src/emergency/emergency_session_controller.v
+HDL-1007 : analyze verilog file src/emergency/emergency_silent_pcm.v
+HDL-1007 : analyze verilog file src/emergency/emergency_text_map.v
+HDL-1007 : analyze verilog file src/emergency/emergency_uart_control.v
+HDL-1007 : analyze verilog file src/emergency/fire_warning_font_24.v
+HDL-1007 : analyze verilog file src/filesystem/fat32_file_streamer_compact.v
+HDL-1007 : analyze verilog file src/filesystem/fat32_volume_scanner.v
+HDL-1007 : analyze verilog file src/flash/config_flash_journal.v
+HDL-1007 : analyze verilog file src/flash/config_journal.v
+HDL-1007 : analyze verilog file src/flash/display_settings_store.v
+HDL-1007 : analyze verilog file src/flash/spi_byte_engine.v
+HDL-1007 : analyze verilog file src/flash/w25q64_preflight_reader.v
+HDL-1007 : analyze verilog file src/flash/w25q64_record_store.v
+HDL-1007 : analyze verilog file src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v(2614)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v(2716)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v(2724)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v(4936)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v(5989)
+HDL-1007 : back to file 'src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v' in src/hdmi/hdmi_1_4b_transmitter_core_wrapper.enc.v(77)
+HDL-1007 : analyze verilog file src/hdmi/hdmi_phy_wrapper.v
+HDL-1007 : analyze verilog file src/hdmi/lane_lvds_10_1.v
+HDL-1007 : analyze verilog file src/image/bmp24_decoder.v
+HDL-1007 : analyze verilog file src/key/display_key_controller.v
+HDL-1007 : analyze verilog file src/key/four_key_event_router.v
+HDL-1007 : analyze verilog file src/notice/finder_audio_reset_controller.v
+HDL-1007 : analyze verilog file src/notice/finder_notice_controller.v
+HDL-1007 : analyze verilog file src/notice/finder_notice_overlay.v
+HDL-1007 : analyze verilog file src/pipeline/display_render_pipeline.v
+HDL-1007 : analyze verilog file src/pipeline/hdmi_pcm_bridge.v
+HDL-1007 : analyze verilog file src/pipeline/tf_media_frontend.v
+HDL-1007 : analyze verilog file src/pipeline/tf_media_ingest_pipeline.v
+HDL-1007 : analyze verilog file src/pipeline/tf_storage_pipeline.v
+HDL-1007 : analyze verilog file src/pipeline/video_playback_pipeline.v
+HDL-1007 : analyze included file src/video/video_media_layout.vh in src/pipeline/video_playback_pipeline.v(11)
+HDL-1007 : back to file 'src/pipeline/video_playback_pipeline.v' in src/pipeline/video_playback_pipeline.v(11)
+HDL-1007 : analyze verilog file src/sdram/frame_hold_copy.v
+HDL-1007 : analyze verilog file src/sdram/media_frame_loader.v
+HDL-1007 : analyze verilog file src/sdram/media_frame_reader.v
+HDL-1007 : analyze verilog file src/sdram/packed_gallery_builder.v
+HDL-1007 : analyze verilog file src/sdram/sdram.v
+HDL-1007 : analyze included file src/sdram/vendor_ip/global_def.vh in src/sdram/sdram.v(10)
+HDL-1007 : back to file 'src/sdram/sdram.v' in src/sdram/sdram.v(10)
+HDL-1007 : undeclared symbol 'SDR_CKE', assumed default net type 'wire' in src/sdram/sdram.v(109)
+HDL-1007 : analyze verilog file src/sdram/stream_sdram_dma.v
+HDL-1007 : analyze verilog file src/sdram/vendor_ip/sdr_as_ram.enc.v
+HDL-1007 : analyze included file src/sdram/vendor_ip/global_def.vh in src/sdram/vendor_ip/sdr_as_ram.enc.v(2)
+HDL-1007 : back to file 'src/sdram/vendor_ip/sdr_as_ram.enc.v' in src/sdram/vendor_ip/sdr_as_ram.enc.v(2)
+HDL-1007 : back to file 'src/sdram/vendor_ip/sdr_as_ram.enc.v' in src/sdram/vendor_ip/sdr_as_ram.enc.v(47)
+HDL-1007 : analyze verilog file src/sdram/vendor_ip/sdr_init_ref.enc.v
+HDL-1007 : analyze included file src/sdram/vendor_ip/global_def.vh in src/sdram/vendor_ip/sdr_init_ref.enc.v(13)
+HDL-1007 : back to file 'src/sdram/vendor_ip/sdr_init_ref.enc.v' in src/sdram/vendor_ip/sdr_init_ref.enc.v(13)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in src/sdram/vendor_ip/sdr_init_ref.enc.v(57)
+HDL-1007 : back to file 'src/sdram/vendor_ip/sdr_init_ref.enc.v' in src/sdram/vendor_ip/sdr_init_ref.enc.v(163)
+HDL-1007 : analyze verilog file src/sdram/vendor_ip/sdr_wrrd.enc.v
+HDL-1007 : analyze included file src/sdram/vendor_ip/global_def.vh in src/sdram/vendor_ip/sdr_wrrd.enc.v(4)
+HDL-1007 : back to file 'src/sdram/vendor_ip/sdr_wrrd.enc.v' in src/sdram/vendor_ip/sdr_wrrd.enc.v(4)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/vendor_ip/sdr_wrrd.enc.v(283)
+HDL-1007 : back to file 'src/sdram/vendor_ip/sdr_wrrd.enc.v' in src/sdram/vendor_ip/sdr_wrrd.enc.v(17)
+HDL-1007 : analyze verilog file src/storage/sd_media_service.v
+HDL-1007 : analyze verilog file src/storage/sd_sector_replay_buffer.v
+HDL-1007 : analyze verilog file src/storage/sd_spi_byte_engine.v
+HDL-1007 : analyze verilog file src/storage/sd_spi_command.v
+HDL-1007 : analyze verilog file src/storage/sd_spi_init.v
+HDL-1007 : analyze verilog file src/storage/sd_spi_multiblock_reader.v
+HDL-1007 : analyze verilog file src/storage/video_packet_loader.v
+HDL-1007 : analyze included file src/video/video_media_layout.vh in src/storage/video_packet_loader.v(11)
+HDL-1007 : back to file 'src/storage/video_packet_loader.v' in src/storage/video_packet_loader.v(11)
+HDL-1007 : analyze verilog file src/top/mall_guard_display_top.v
+HDL-1007 : analyze verilog file src/uart/command_receipt.v
+HDL-1007 : analyze verilog file src/uart/display_command_decoder.v
+HDL-1007 : analyze verilog file src/uart/uart_status_reporter.v
+HDL-1007 : analyze verilog file src/uart/uart_tx_byte.v
+HDL-1007 : analyze verilog file src/video/av_playback_clock.v
+HDL-1007 : analyze verilog file src/video/bc1_frame_decoder.v
+PRJ-1401 : Successfully analyzed 94 source files.
+RUN-1002 : start command "set_param gate eram_init on -run syn_1"
+PRJ-1105 : Update param syn_1 gate::eram_init::on succeed.
+RUN-1002 : start command "set_param flow thread 2 -run syn_1"
+PRJ-1105 : Update param syn_1 flow::thread::2 succeed.
+RUN-1002 : start command "set_param gate pack_seq_in_io off -run syn_1"
+PRJ-1105 : Update param syn_1 gate::pack_seq_in_io::off succeed.
+RUN-1002 : start command "set_param gate map_mode area_prior -run syn_1"
+PRJ-1105 : Update param syn_1 gate::map_mode::area_prior succeed.
+RUN-1002 : start command "set_param rtl min_ripple_len 36 -run syn_1"
+PRJ-1105 : Update param syn_1 rtl::min_ripple_len::36 succeed.
+RUN-1002 : start command "set_param flow thread 8 -run phy_1"
+PRJ-1105 : Update param phy_1 flow::thread::8 succeed.
+RUN-1002 : start command "set_param place effort high -run phy_1"
+PRJ-1105 : Update param phy_1 place::effort::high succeed.
+RUN-1002 : start command "set_param place fix_hold off -run phy_1"
+PRJ-1105 : Update param phy_1 place::fix_hold::off succeed.
+RUN-1002 : start command "set_param place opt_timing high -run phy_1"
+PRJ-1105 : Update param phy_1 place::opt_timing::high succeed.
+RUN-1002 : start command "set_param place post_place_opt high -run phy_1"
+PRJ-1105 : Update param phy_1 place::post_place_opt::high succeed.
+RUN-1002 : start command "set_param place seed 36 -run phy_1"
+PRJ-1105 : Update param phy_1 place::seed::36 succeed.
+RUN-1002 : start command "set_param route post_route_opt high -run phy_1"
+PRJ-1105 : Update param phy_1 route::post_route_opt::high succeed.
+RUN-1002 : start command "set_param route hold_fix_iteration 20 -run phy_1"
+PRJ-1105 : Update param phy_1 route::hold_fix_iteration::20 succeed.
+RUN-1002 : start command "set_param route effort routability -run phy_1"
+PRJ-1105 : Update param phy_1 route::effort::routability succeed.
+RUN-1002 : start command "set_user_params -run syn_1 -params 
+    {flow thread 2}
+    {gate eram_init on}
+    {gate pack_seq_in_io off}
+    {gate map_mode area_prior}
+    {rtl min_ripple_len 36}
+"
+PRJ-1105 : Update param syn_1 flow::thread::2 succeed.
+PRJ-1105 : Update param syn_1 gate::eram_init::on succeed.
+PRJ-1105 : Update param syn_1 gate::pack_seq_in_io::off succeed.
+PRJ-1105 : Update param syn_1 gate::map_mode::area_prior succeed.
+PRJ-1105 : Update param syn_1 rtl::min_ripple_len::36 succeed.
+RUN-1002 : start command "set_user_params -run phy_1 -params 
+    {flow thread 8}
+    {place effort high}
+    {place opt_timing high}
+    {place post_place_opt high}
+    {place seed 36}
+    {place fix_hold off}
+    {route post_route_opt high}
+    {route hold_fix_iteration 20}
+    {route effort routability}
+"
+PRJ-1105 : Update param phy_1 flow::thread::8 succeed.
+PRJ-1105 : Update param phy_1 place::effort::high succeed.
+PRJ-1105 : Update param phy_1 place::opt_timing::high succeed.
+PRJ-1105 : Update param phy_1 place::post_place_opt::high succeed.
+PRJ-1105 : Update param phy_1 place::seed::36 succeed.
+PRJ-1105 : Update param phy_1 place::fix_hold::off succeed.
+PRJ-1105 : Update param phy_1 route::post_route_opt::high succeed.
+PRJ-1105 : Update param phy_1 route::hold_fix_iteration::20 succeed.
+PRJ-1105 : Update param phy_1 route::effort::routability succeed.
+RUN-1002 : start command "get_param gate eram_init -run syn_1"
+PRJ-1104 : Get run syn_1 param value: gate::eram_init::on.
+RUN-1002 : start command "get_param gate pack_seq_in_io -run syn_1"
+PRJ-1104 : Get run syn_1 param value: gate::pack_seq_in_io::off.
+RUN-1002 : start command "get_param place seed -run phy_1"
+PRJ-1104 : Get run phy_1 param value: place::seed::36.
+RUN-1002 : start command "get_param route effort -run phy_1"
+PRJ-1104 : Get run phy_1 param value: route::effort::routability.
+RUN-1002 : start command "reset_runs syn_1"
+PRJ-1412 : reset_run syn_1.
+RUN-1002 : start command "launch_runs syn_1"
+PRJ-1403 : syn_1 is launched.
+PRJ-1404 : Run log file is D:/Datum/QS_FPGA/test/mall_emergency_multimedia_display/mall_emergency_multimedia_display_Runs/syn_1/run.log.
+RUN-1002 : start command "wait_run syn_1"
+PRJ-1405 : Waiting for run syn_1 to finish.
+PRJ-1409 : launch_runs syn_1  -jobs 1.

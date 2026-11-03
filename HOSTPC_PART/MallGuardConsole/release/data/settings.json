@@ -1,0 +1,14 @@
+﻿{
+  "Serial": {
+    "Port": "",
+    "Baud": 115200,
+    "DataBits": 8,
+    "Parity": "None",
+    "StopBits": "One",
+    "Flow": "None",
+    "Dtr": false,
+    "Rts": false
+  },
+  "Assets": "",
+  "Record": true
+}

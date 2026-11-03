@@ -1,0 +1,427 @@
+standard
+***Report Model: mall_guard_display_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        45   out of    188   23.94%
+  #input                   12
+  #output                  33
+  #inout                    0
+
+Utilization Statistics
+#lut                    17748   out of  19600   90.55%
+#reg                    11570   out of  19600   59.03%
+#le                     18194
+  #lut only              6624   out of  18194   36.41%
+  #reg only               446   out of  18194    2.45%
+  #lut&reg              11124   out of  18194   61.14%
+#bram                      64   out of     64  100.00%
+  #bram9k                  64
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       23   out of     29   79.31%
+#pad                       49   out of    188   26.06%
+  #ireg                     0
+  #oreg                     4
+  #treg                     0
+#pll                        2   out of      4   50.00%
+#gclk                       4   out of     16   25.00%
+
+
+Detailed IO Report
+
+      Name         Direction    Location    IOStandard    IOType    DriveStrength    PullType    PackReg  
+   flash_miso        INPUT         N8        LVCMOS33      PAD           N/A          PULLUP      NONE    
+     key1_n          INPUT         A2        LVCMOS33      PAD           N/A          PULLUP      NONE    
+     key2_n          INPUT         B2        LVCMOS33      PAD           N/A          PULLUP      NONE    
+     key3_n          INPUT         B1        LVCMOS33      PAD           N/A          PULLUP      NONE    
+     key4_n          INPUT         C1        LVCMOS33      PAD           N/A          PULLUP      NONE    
+     sd_miso         INPUT        B14        LVCMOS33      PAD           N/A          PULLUP      NONE    
+      sw1_n          INPUT         C8        LVCMOS33      PAD           N/A          PULLUP      NONE    
+      sw2_n          INPUT         C7        LVCMOS33      PAD           N/A          PULLUP      NONE    
+      sw3_n          INPUT         C6        LVCMOS33      PAD           N/A          PULLUP      NONE    
+      sw4_n          INPUT         C5        LVCMOS33      PAD           N/A          PULLUP      NONE    
+     sys_clk         INPUT         R7        LVCMOS33      PAD           N/A           NONE       NONE    
+    uart_rx_i        INPUT        F12        LVCMOS33      PAD           N/A          PULLUP      NONE    
+   HDMI_CLK_P       OUTPUT         K1         LVDS33       PAD           NA            NONE       DDRX1   
+  HDMI_CLK_P(n)     OUTPUT         J1         LVDS33       PAD           NA            NONE       NONE    
+    HDMI_D0_P       OUTPUT         F5         LVDS33       PAD           NA            NONE       DDRX1   
+  HDMI_D0_P(n)      OUTPUT         F4         LVDS33       PAD           NA            NONE       NONE    
+    HDMI_D1_P       OUTPUT         E3         LVDS33       PAD           NA            NONE       DDRX1   
+  HDMI_D1_P(n)      OUTPUT         E4         LVDS33       PAD           NA            NONE       NONE    
+    HDMI_D2_P       OUTPUT         B3         LVDS33       PAD           NA            NONE       DDRX1   
+  HDMI_D2_P(n)      OUTPUT         D3         LVDS33       PAD           NA            NONE       NONE    
+    buzzer_n        OUTPUT        H11        LVCMOS33      PAD            8           PULLUP      NONE    
+    dig_n[7]        OUTPUT        F16        LVCMOS33      PAD            8            NONE       NONE    
+    dig_n[6]        OUTPUT        E16        LVCMOS33      PAD            8            NONE       NONE    
+    dig_n[5]        OUTPUT        E12        LVCMOS33      PAD            8            NONE       NONE    
+    dig_n[4]        OUTPUT        E10        LVCMOS33      PAD            8            NONE       NONE    
+    dig_n[3]        OUTPUT        C13        LVCMOS33      PAD            8            NONE       NONE    
+    dig_n[2]        OUTPUT        F10        LVCMOS33      PAD            8            NONE       NONE    
+    dig_n[1]        OUTPUT        E11        LVCMOS33      PAD            8            NONE       NONE    
+    dig_n[0]        OUTPUT        D11        LVCMOS33      PAD            8            NONE       NONE    
+   flash_cs_n       OUTPUT         P8        LVCMOS33      PAD            8            NONE       NONE    
+  flash_hold_n      OUTPUT         R9        LVCMOS33      PAD            8            NONE       NONE    
+   flash_mosi       OUTPUT         P7        LVCMOS33      PAD            8            NONE       NONE    
+   flash_sclk       OUTPUT         M9        LVCMOS33      PAD            8            NONE       NONE    
+   flash_wp_n       OUTPUT         P9        LVCMOS33      PAD            8            NONE       NONE    
+     led[3]         OUTPUT        B12        LVCMOS33      PAD            8            NONE       NONE    
+     led[2]         OUTPUT        C10        LVCMOS33      PAD            8            NONE       NONE    
+     led[1]         OUTPUT         A3        LVCMOS33      PAD            8            NONE       NONE    
+     led[0]         OUTPUT         A4        LVCMOS33      PAD            8            NONE       NONE    
+     sd_cs_n        OUTPUT        A12        LVCMOS33      PAD            8           PULLUP      NONE    
+     sd_mosi        OUTPUT        A13        LVCMOS33      PAD            8            NONE       NONE    
+     sd_sclk        OUTPUT        A14        LVCMOS33      PAD            8            NONE       NONE    
+    seg_n[6]        OUTPUT         A7        LVCMOS33      PAD            8            NONE       NONE    
+    seg_n[5]        OUTPUT         A8        LVCMOS33      PAD            8            NONE       NONE    
+    seg_n[4]        OUTPUT         B5        LVCMOS33      PAD            8            NONE       NONE    
+    seg_n[3]        OUTPUT         A5        LVCMOS33      PAD            8            NONE       NONE    
+    seg_n[2]        OUTPUT         B6        LVCMOS33      PAD            8            NONE       NONE    
+    seg_n[1]        OUTPUT        C16        LVCMOS33      PAD            8            NONE       NONE    
+    seg_n[0]        OUTPUT        C15        LVCMOS33      PAD            8            NONE       NONE    
+    uart_tx_o       OUTPUT        D12        LVCMOS33      PAD            8            NONE       NONE    
+       dm0          OUTPUT        S14        LVCMOS25      PAD            8            NONE       NONE    
+       cke          OUTPUT        S18        LVCMOS25      PAD            8            NONE       NONE    
+      we_n          OUTPUT        S19        LVCMOS25      PAD            8            NONE       NONE    
+      cas_n         OUTPUT        S20        LVCMOS25      PAD            8            NONE       NONE    
+      ras_n         OUTPUT        S21        LVCMOS25      PAD            8            NONE       NONE    
+      cs_n          OUTPUT        S22        LVCMOS25      PAD            8            NONE       NONE    
+     addr[9]        OUTPUT        S23        LVCMOS25      PAD            8            NONE       NONE    
+     addr[8]        OUTPUT        S24        LVCMOS25      PAD            8            NONE       NONE    
+     addr[7]        OUTPUT        S25        LVCMOS25      PAD            8            NONE       NONE    
+     addr[6]        OUTPUT        S26        LVCMOS25      PAD            8            NONE       NONE    
+     addr[5]        OUTPUT        S27        LVCMOS25      PAD            8            NONE       NONE    
+     addr[4]        OUTPUT        S28        LVCMOS25      PAD            8            NONE       NONE    
+       dm2          OUTPUT        S29        LVCMOS25      PAD            8            NONE       NONE    
+       dm3          OUTPUT        S61        LVCMOS25      PAD            8            NONE       NONE    
+     addr[3]        OUTPUT        S64        LVCMOS25      PAD            8            NONE       NONE    
+     addr[2]        OUTPUT        S65        LVCMOS25      PAD            8            NONE       NONE    
+     addr[1]        OUTPUT        S66        LVCMOS25      PAD            8            NONE       NONE    
+     addr[0]        OUTPUT        S67        LVCMOS25      PAD            8            NONE       NONE    
+    addr[10]        OUTPUT        S68        LVCMOS25      PAD            8            NONE       NONE    
+      ba[0]         OUTPUT        S69        LVCMOS25      PAD            8            NONE       NONE    
+      ba[1]         OUTPUT        S70        LVCMOS25      PAD            8            NONE       NONE    
+       clk          OUTPUT        S73        LVCMOS25      PAD            8            NONE       NONE    
+       dm1          OUTPUT        S76        LVCMOS25      PAD            8            NONE       NONE    
+      dq[0]          INOUT         S1        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[6]          INOUT        S11        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[7]          INOUT        S12        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[1]          INOUT         S2        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[23]          INOUT        S31        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[22]          INOUT        S32        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[21]          INOUT        S35        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[20]          INOUT        S36        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[19]          INOUT        S37        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[18]          INOUT        S38        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[17]          INOUT        S41        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[16]          INOUT        S42        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[31]          INOUT        S48        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[30]          INOUT        S49        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[2]          INOUT         S5        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[29]          INOUT        S52        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[28]          INOUT        S53        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[27]          INOUT        S54        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[26]          INOUT        S55        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[25]          INOUT        S58        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[24]          INOUT        S59        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[3]          INOUT         S6        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[4]          INOUT         S7        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[8]          INOUT        S78        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[9]          INOUT        S79        LVCMOS25      PAD            8           PULLUP      NONE    
+      dq[5]          INOUT         S8        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[10]          INOUT        S82        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[11]          INOUT        S83        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[12]          INOUT        S84        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[13]          INOUT        S85        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[14]          INOUT        S88        LVCMOS25      PAD            8           PULLUP      NONE    
+     dq[15]          INOUT        S89        LVCMOS25      PAD            8           PULLUP      NONE    
+
+Report Clock Domain Luts:
+
+--------------------------------------------------------------------------------------------------------------------
+  Index   |  Name           |  Frequency   |  LUT As Logic   |  LUT As Shifter   |  LUT As Dram   |  BRAM   |  DSP
+--------------------------------------------------------------------------------------------------------------------
+  #1      |  mem_clk        |  40MHz       |  4315           |  0                |  0             |  27     |  7
+  #2      |  mem_clk_shift  |  40MHz       |  4              |  0                |  0             |  0      |  0
+  #3      |  pixel_clk      |  25MHz       |  2065           |  0                |  16            |  45     |  11
+  #4      |  pixel_clk_5x   |  125MHz      |  31             |  0                |  0             |  0      |  0
+  #5      |  sys_clk        |  50MHz       |  2142           |  0                |  0             |  15     |  5
+--------------------------------------------------------------------------------------------------------------------
+
+Clock Resource Statistics
+Index     ClockNet                                          Type               DriverType         Driver                        Fanout
+#1        u_mem_pll/mem_clk_buf                             Global             pll                u_mem_pll/pll_inst.clkc1      3976
+#2        sys_clk_dup_1                                     Global             io                 sys_clk_syn_2.di              1759
+#3        u_video_pll/clk0_buf                              Global             pll                u_video_pll/pll_inst.clkc0    1734
+#4        u_hdmi_audio_phy/u0_lane_lvds_8_1/I_serial_clk    Global             pll                u_video_pll/pll_inst.clkc1    35
+#5        u_mem_pll/feedback_clk_buf                        Global             pll                u_mem_pll/pll_inst.clkc0      0
+#6        u_mem_pll/mem_shift_raw                           Global             pll                u_mem_pll/pll_inst.clkc2      0
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                                    |Module                                            |le      |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                                         |mall_guard_display_top                            |18194   |17615   |133     |11574   |64      |23      |
+|  g_bright_sync[0]$u_sync                   |sync_2ff                                          |4       |0       |0       |4       |0       |0       |
+|  g_bright_sync[1]$u_sync                   |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_bright_sync[2]$u_sync                   |sync_2ff                                          |1       |0       |0       |1       |0       |0       |
+|  g_bright_sync[3]$u_sync                   |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_bright_sync[4]$u_sync                   |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_bright_sync[6]$u_sync                   |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_contrast[1]$u_sync                      |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_contrast[2]$u_sync                      |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_contrast[4]$u_sync                      |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_contrast[5]$u_sync                      |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_emergency_complete[1]$u_ready           |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_emergency_complete[2]$u_ready           |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_emergency_complete[3]$u_ready           |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_emergency_type[1]$u_sync                |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_focus[0]$u_sync                         |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_focus[1]$u_sync                         |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_host_ready[0]$u_ready                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_host_ready[2]$u_ready                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_host_ready[3]$u_ready                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_image_sync[0]$u_sync                    |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_image_sync[2]$u_sync                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_media_sync[0]$u_sync                    |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_media_sys[0]$u_sync                     |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_notice_id[0]$u_sync                     |sync_2ff                                          |4       |0       |0       |4       |0       |0       |
+|  g_notice_id[10]$u_sync                    |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_notice_id[11]$u_sync                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_notice_id[12]$u_sync                    |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_notice_id[13]$u_sync                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_notice_id[14]$u_sync                    |sync_2ff                                          |4       |0       |0       |4       |0       |0       |
+|  g_notice_id[15]$u_sync                    |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_notice_id[1]$u_sync                     |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  g_notice_id[2]$u_sync                     |sync_2ff                                          |4       |0       |0       |4       |0       |0       |
+|  g_notice_id[8]$u_sync                     |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_notice_id[9]$u_sync                     |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_notice_kind[0]$u_sync                   |sync_2ff                                          |3       |2       |0       |3       |0       |0       |
+|  g_osd_err[0]$u_sync                       |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_osd_err[3]$u_sync                       |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_err[4]$u_sync                       |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_err[5]$u_sync                       |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_err[6]$u_sync                       |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_period_brightness[0]$u_brightness   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_seconds[0]$u_sync                   |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_osd_seconds[1]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_seconds[2]$u_sync                   |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_osd_seconds[4]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_seconds[5]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_osd_volume[0]$u_volume                  |sync_2ff                                          |1       |1       |0       |1       |0       |0       |
+|  g_osd_volume[1]$u_volume                  |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_osd_volume[2]$u_volume                  |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_video_error_sync[0]$u_sync              |sync_2ff                                          |3       |3       |0       |3       |0       |0       |
+|  g_video_error_sync[2]$u_sync              |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_video_error_sync[3]$u_sync              |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_video_error_sync[4]$u_sync              |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_video_error_sync[6]$u_sync              |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_video_error_sync[7]$u_sync              |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_volume_sync[2]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_volume_sync[3]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_volume_sync[4]$u_sync                   |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_volume_sync[5]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_volume_sync[6]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_volume_sync[7]$u_sync                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_progress_pix[0]$u_sync             |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_progress_pix[1]$u_sync             |sync_2ff                                          |3       |2       |0       |3       |0       |0       |
+|  g_warm_progress_pix[2]$u_sync             |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_progress_pix[3]$u_sync             |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_progress_pix[4]$u_sync             |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_progress_pix[5]$u_sync             |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  g_warm_status[0]$u_prog                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[1]$u_err                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[1]$u_prog                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[2]$u_err                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[2]$u_prog                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[3]$u_err                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[4]$u_err                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[4]$u_prog                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[5]$u_err                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[5]$u_prog                   |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[6]$u_err                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[7]$u_err                    |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  g_warm_status[7]$u_prog                   |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|  u_alarm_error                             |sync_2ff                                          |2       |2       |0       |1       |0       |0       |
+|  u_alarm_wav                               |wav_file_player                                   |988     |974     |9       |603     |2       |2       |
+|    u_audio_stream                          |fat32_file_streamer_compact                       |550     |536     |9       |342     |0       |2       |
+|    u_fifo                                  |async_pcm_fifo                                    |89      |89      |0       |86      |2       |0       |
+|  u_alert_mem_reset                         |reset_sync                                        |2       |2       |0       |2       |0       |0       |
+|  u_alert_notice                            |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_alert_pix_reset                         |reset_sync                                        |2       |2       |0       |2       |0       |0       |
+|  u_audio_fault_sys                         |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_audio_sd_arbiter                        |audio_sector_arbiter                              |88      |80      |0       |86      |0       |0       |
+|  u_audio_waveform                          |audio_envelope_visualizer                         |229     |229     |0       |117     |2       |2       |
+|  u_boot_loading_display                    |boot_loading_display                              |10      |10      |0       |6       |0       |0       |
+|  u_boot_progress                           |boot_load_progress                                |65      |65      |0       |46      |0       |0       |
+|  u_boot_status_pix                         |status_snapshot_cdc                               |14      |12      |0       |14      |0       |0       |
+|  u_boot_status_sys                         |status_snapshot_cdc                               |46      |46      |0       |28      |0       |0       |
+|  u_clip                                    |video_playback_pipeline                           |1878    |1746    |0       |1321    |13      |0       |
+|    g_error[0]$u_sync                       |sync_2ff                                          |1       |1       |0       |1       |0       |0       |
+|    g_error[1]$u_reader_sync                |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_error[1]$u_sync                       |sync_2ff                                          |1       |0       |0       |1       |0       |0       |
+|    g_error[2]$u_reader_sync                |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_error[2]$u_sync                       |sync_2ff                                          |4       |2       |0       |4       |0       |0       |
+|    g_error[3]$u_reader_sync                |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_error[3]$u_sync                       |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_error[4]$u_reader_sync                |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|    g_error[5]$u_reader_sync                |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_error[5]$u_sync                       |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|    g_error[6]$u_reader_sync                |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_error[6]$u_sync                       |sync_2ff                                          |3       |3       |0       |3       |0       |0       |
+|    u_av_clock                              |av_playback_clock                                 |140     |128     |0       |111     |0       |0       |
+|    u_decode_fifo                           |demo_fifo                                         |160     |142     |0       |132     |2       |0       |
+|      u_prefetch                            |fifo_prefetch_2                                   |49      |48      |0       |48      |0       |0       |
+|      u_ram                                 |async_pcm_fifo                                    |109     |92      |0       |82      |2       |0       |
+|    u_decoder                               |bc1_frame_decoder                                 |447     |447     |0       |258     |5       |0       |
+|    u_dma                                   |stream_sdram_dma                                  |315     |315     |0       |122     |0       |0       |
+|    u_first                                 |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    u_loader                                |video_packet_loader                               |217     |202     |0       |184     |0       |0       |
+|    u_packet_fifo                           |demo_fifo                                         |141     |97      |0       |135     |2       |0       |
+|      u_prefetch                            |fifo_prefetch_2                                   |68      |40      |0       |67      |0       |0       |
+|      u_ram                                 |async_pcm_fifo                                    |71      |55      |0       |67      |2       |0       |
+|    u_pcm_fifo                              |demo_fifo                                         |136     |104     |0       |134     |2       |0       |
+|      u_ram                                 |async_pcm_fifo                                    |69      |65      |0       |67      |2       |0       |
+|      u_prefetch                            |fifo_prefetch_2                                   |66      |38      |0       |66      |0       |0       |
+|    u_source_fifo                           |demo_fifo                                         |112     |104     |0       |112     |2       |0       |
+|      u_ram                                 |async_pcm_fifo                                    |66      |58      |0       |66      |2       |0       |
+|      u_prefetch                            |fifo_prefetch_2                                   |46      |46      |0       |46      |0       |0       |
+|  u_color                                   |color_adjust_pipeline                             |87      |87      |0       |54      |0       |2       |
+|  u_emergency_indicators                    |emergency_indicators                              |84      |84      |0       |49      |0       |0       |
+|  u_emergency_uart                          |emergency_uart_control                            |191     |191     |0       |87      |0       |0       |
+|  u_finder                                  |finder_notice_controller                          |429     |426     |0       |244     |0       |0       |
+|  u_fire_glow                               |emergency_halo_overlay                            |138     |138     |0       |13      |0       |2       |
+|    u_profile                               |emergency_halo_profile_rom                        |116     |116     |0       |0       |0       |0       |
+|  u_hdmi_audio_bridge                       |hdmi_pcm_bridge                                   |2399    |2297    |0       |1389    |14      |3       |
+|    u_official_transmitter                  |hdmi_1_4b_transmitter_core_wrapper                |2088    |1986    |0       |1277    |14      |0       |
+|      u0_reset_sync                         |hdmi_1_4b_tx_reset_sync                           |11      |5       |0       |8       |0       |0       |
+|      u_hdmi_tx_controller_wrapper          |hdmi_tx_controller_wrapper                        |1316    |1220    |0       |1236    |14      |0       |
+|        u0_hdmi_tmds_encode                 |hdmi_tmds_encode                                  |165     |150     |0       |162     |0       |0       |
+|        u1_hdmi_tmds_encode                 |hdmi_tmds_encode                                  |144     |114     |0       |116     |0       |0       |
+|        u2_hdmi_tmds_encode                 |hdmi_tmds_encode                                  |115     |108     |0       |104     |0       |0       |
+|        u_hdmi_data_distribution            |hdmi_data_distribution                            |35      |28      |0       |35      |0       |0       |
+|        u_hdmi_island_data_assemble         |hdmi_island_data_assemble                         |417     |392     |0       |413     |0       |0       |
+|        u_hdmi_island_data_gen              |hdmi_island_data_gen                              |284     |280     |0       |267     |11      |0       |
+|          U_audio_sample_packet_2_channel   |audio_sample_packet_2_channel                     |178     |174     |0       |164     |11      |0       |
+|            u_w96_d1024_fifo                |w96_d1024_fifo                                    |57      |56      |0       |57      |11      |0       |
+|            u_BCH_32_24_encode              |BCH_32_24_encode                                  |1       |1       |0       |1       |0       |0       |
+|            u_BCH_64_56_encode              |BCH_64_56_encode                                  |8       |8       |0       |7       |0       |0       |
+|          u_audio_clock_regeneration_packet |audio_clock_regeneration_packet                   |3       |3       |0       |3       |0       |0       |
+|        u_hdmi_video_data_assemble          |hdmi_video_data_assemble                          |43      |35      |0       |43      |0       |0       |
+|        u_hdmi_video_source                 |hdmi_video_source                                 |57      |57      |0       |41      |0       |0       |
+|        u_video_axi_stream_receiver         |video_axi_stream_receiver                         |56      |56      |0       |55      |3       |0       |
+|          u_w24_d1024_fifo                  |w24_d1024_fifo                                    |56      |56      |0       |55      |3       |0       |
+|    u_tone                                  |background_tone_generator                         |191     |191     |0       |73      |0       |1       |
+|  u_hdmi_audio_phy                          |hdmi_phy_wrapper                                  |37      |36      |0       |37      |0       |0       |
+|    u0_lane_lvds_8_1                        |lane_lvds_10_1                                    |18      |18      |0       |18      |0       |0       |
+|    u1_lane_lvds_8_1                        |lane_lvds_10_1                                    |8       |8       |0       |8       |0       |0       |
+|    u2_lane_lvds_8_1                        |lane_lvds_10_1                                    |7       |7       |0       |7       |0       |0       |
+|    u3_lane_lvds_8_1                        |lane_lvds_10_1                                    |4       |3       |0       |4       |0       |0       |
+|  u_keys                                    |display_key_controller                            |489     |489     |0       |302     |0       |0       |
+|    u_events                                |four_key_event_router                             |425     |425     |0       |247     |0       |0       |
+|  u_lost_active                             |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_mem_pll                                 |sys_pll                                           |0       |0       |0       |0       |0       |0       |
+|  u_mem_reset                               |reset_sync                                        |1       |0       |0       |1       |0       |0       |
+|  u_notice_overlay                          |finder_notice_overlay                             |226     |226     |0       |78      |15      |0       |
+|  u_osd                                     |display_status_overlay                            |138     |138     |0       |84      |0       |0       |
+|    u_brand_watermark                       |brand_watermark_24                                |102     |102     |0       |53      |0       |0       |
+|    u_osd                                   |status_glyph_renderer                             |20      |20      |0       |19      |0       |0       |
+|  u_overlay_switch                          |overlay_switch_control                            |34      |32      |0       |20      |0       |0       |
+|  u_panel                                   |display_segment_panel                             |185     |185     |0       |102     |0       |0       |
+|  u_pause_pix                               |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_period_count                            |panel_period_counter                              |33      |33      |0       |26      |0       |0       |
+|  u_pix_reset                               |reset_sync                                        |2       |2       |0       |2       |0       |0       |
+|  u_player_config                           |display_settings_store                            |1765    |1741    |9       |1151    |0       |4       |
+|    u_journal                               |config_flash_journal                              |1339    |1315    |9       |895     |0       |0       |
+|      u_journal                             |config_journal                                    |476     |467     |9       |240     |0       |0       |
+|      u_store                               |w25q64_record_store                               |496     |481     |0       |327     |0       |0       |
+|        u_byte_engine                       |spi_byte_engine                                   |43      |43      |0       |30      |0       |0       |
+|    u_preflight                             |w25q64_preflight_reader                           |156     |156     |0       |97      |0       |0       |
+|      u_spi_byte_engine                     |spi_byte_engine                                   |36      |36      |0       |33      |0       |0       |
+|  u_receipt                                 |command_receipt                                   |19      |19      |0       |11      |0       |0       |
+|  u_remote                                  |display_command_decoder                           |177     |177     |0       |85      |0       |0       |
+|  u_sdram                                   |sdram                                             |474     |435     |0       |396     |0       |0       |
+|    u2_ram                                  |sdr_as_ram                                        |460     |421     |0       |382     |0       |0       |
+|      u1_init_ref                           |sdr_init_ref                                      |95      |92      |0       |84      |0       |0       |
+|      u2_wrrd                               |sdr_wrrd                                          |365     |329     |0       |298     |0       |0       |
+|  u_silent_pcm                              |emergency_silent_pcm                              |54      |54      |0       |21      |0       |0       |
+|  u_storage_error_snapshot                  |sticky_error_cdc                                  |33      |30      |0       |32      |0       |0       |
+|    g_code[0]$u_sync                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_code[4]$u_sync                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_code[5]$u_sync                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_code[6]$u_sync                        |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|    g_code[7]$u_sync                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    u_valid_sync                            |sync_2ff                                          |2       |0       |0       |2       |0       |0       |
+|  u_storage_ingest                          |tf_storage_pipeline                               |4180    |4021    |87      |2880    |4       |2       |
+|    u_ingest_frontend                       |tf_media_frontend                                 |3288    |3129    |87      |2371    |3       |2       |
+|      u_ingest_pipeline                     |tf_media_ingest_pipeline                          |3288    |3129    |87      |2371    |3       |2       |
+|        u_bmp_decoder                       |bmp24_decoder                                     |525     |492     |0       |383     |0       |0       |
+|        u_file_streamer                     |fat32_file_streamer_compact                       |639     |630     |9       |349     |0       |2       |
+|        u_frame_loader                      |media_frame_loader                                |297     |297     |0       |170     |2       |0       |
+|        u_volume_scanner                    |fat32_volume_scanner                              |1777    |1662    |78      |1431    |1       |0       |
+|    u_sd_service                            |sd_media_service                                  |763     |763     |0       |414     |0       |0       |
+|      u_init                                |sd_spi_init                                       |308     |308     |0       |189     |0       |0       |
+|        u_byte_engine                       |sd_spi_byte_engine                                |64      |64      |0       |40      |0       |0       |
+|        u_command                           |sd_spi_command                                    |162     |162     |0       |98      |0       |0       |
+|      u_reader                              |sd_spi_multiblock_reader                          |455     |455     |0       |225     |0       |0       |
+|        u_byte_engine                       |sd_spi_byte_engine                                |48      |48      |0       |33      |0       |0       |
+|    u_shared_replay                         |sd_sector_replay_buffer                           |110     |110     |0       |80      |1       |0       |
+|  u_subtitle                                |mall_marquee_overlay                              |408     |408     |0       |95      |6       |0       |
+|    g_multi_text$u_rom                      |emergency_font_rom                                |208     |208     |0       |16      |6       |0       |
+|  u_system_reset                            |system_reset_controller                           |30      |30      |0       |26      |0       |0       |
+|  u_thumbnail_builder                       |packed_gallery_builder                            |278     |278     |0       |179     |4       |1       |
+|  u_thumbnails                              |thumbnail_gallery_overlay                         |57      |49      |0       |51      |0       |0       |
+|  u_timeslot                                |advertising_slot_supervisor                       |118     |118     |0       |100     |0       |0       |
+|  u_uart_report                             |uart_status_reporter                              |424     |424     |0       |260     |0       |0       |
+|    u_tx                                    |uart_tx_byte                                      |87      |87      |0       |48      |0       |0       |
+|  u_video                                   |display_render_pipeline                           |784     |765     |11      |494     |2       |2       |
+|    g_emergency_ready[0]$u_ready            |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_emergency_ready[2]$u_ready            |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|    g_emergency_ready[3]$u_ready            |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    u_control                               |advertisement_playback_controller                 |213     |213     |0       |95      |0       |0       |
+|    u_fade                                  |video_fade_transition                             |27      |27      |0       |14      |0       |0       |
+|    u_fire_request_sync                     |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    u_player_enable_pix                     |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    u_reader                                |media_frame_reader                                |368     |349     |11      |297     |2       |0       |
+|      u_read_fifo                           |rfifo_32_32_512                                   |90      |90      |0       |87      |2       |0       |
+|        ram_inst                            |ram_infer_rfifo_32_32_512                         |0       |0       |0       |0       |2       |0       |
+|        rd_to_wr_cross_inst                 |fifo_cross_domain_addr_process_al_rfifo_32_32_512 |35      |35      |0       |34      |0       |0       |
+|        wr_to_rd_cross_inst                 |fifo_cross_domain_addr_process_al_rfifo_32_32_512 |34      |34      |0       |34      |0       |0       |
+|      u_prefetch                            |fifo_prefetch_2                                   |68      |60      |0       |67      |0       |0       |
+|    u_timing                                |video_timing_ctrl                                 |31      |31      |0       |26      |0       |0       |
+|    u_video_adapter                         |rgb_video_adapter                                 |94      |94      |0       |26      |0       |0       |
+|  u_video_fault_sys                         |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_video_mode                              |video_mode_control                                |4       |4       |0       |3       |0       |0       |
+|  u_video_pll                               |video_pll                                         |0       |0       |0       |0       |0       |0       |
+|  u_video_sd_arbiter                        |audio_sector_arbiter                              |82      |79      |0       |82      |0       |0       |
+|  u_video_switch                            |mode_switch                                       |23      |23      |0       |21      |0       |0       |
+|  u_view_sync                               |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_warm_failed_pix                         |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_warm_hold_pix                           |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_warm_loading_sys                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_wav                                     |wav_file_player                                   |1022    |1000    |17      |570     |2       |2       |
+|    u_audio_stream                          |fat32_file_streamer_compact                       |619     |602     |17      |335     |0       |2       |
+|    u_fifo                                  |async_pcm_fifo                                    |75      |70      |0       |72      |2       |0       |
+|  u_wav_error_snapshot                      |sticky_error_cdc                                  |25      |25      |0       |25      |0       |0       |
+|    g_code[0]$u_sync                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_code[4]$u_sync                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|    g_code[5]$u_sync                        |sync_2ff                                          |4       |4       |0       |4       |0       |0       |
+|    g_code[6]$u_sync                        |sync_2ff                                          |2       |2       |0       |2       |0       |0       |
+|  u_alert_restart                           |finder_audio_reset_controller                     |18      |18      |0       |17      |0       |0       |
+|  u_emergency_session                       |emergency_session_controller                      |6       |6       |0       |6       |0       |0       |
+|  u_loading                                 |loading_banner                                    |6       |6       |0       |6       |0       |0       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets   
+    #1          1       10998  
+    #2          2       4237   
+    #3          3       2568   
+    #4          4       1854   
+    #5        5-10      2867   
+    #6        11-50      844   
+    #7       51-100      65    
+    #8       101-500      3    
+    #9        >500        3    
+  Average     3.40             
